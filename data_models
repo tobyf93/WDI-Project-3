@@ -11,7 +11,7 @@ customers:
 orders:
   number: integer
   status:string
-  customer_id:integer (foreign key)
+  customer_id:integer
 
 items:
   category:string
@@ -20,5 +20,5 @@ items:
   cl_id:string
 
 items_orders:
-  item_id:integer (foreign key)
-  order_id:integer (foreign key)
+  item_id:integer
+  order_id:integer
