@@ -1,16 +1,15 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: customers
 #
 #  id         :integer          not null, primary key
-#  category   :string
 #  name       :string
-#  price      :float
-#  cl_id      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Item < ActiveRecord::Base
-  has_and_belongs_to_many :orders
+require 'rails_helper'
+
+RSpec.describe Customer, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
