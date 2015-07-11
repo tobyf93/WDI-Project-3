@@ -16,7 +16,7 @@ body {
   flex-direction: row;
   flex-grow: 1;
 
-  div {
+  >div {
     &:nth-child(even) {
       background: grey;
     }
@@ -28,17 +28,34 @@ body {
 
   #categories {
     flex-grow: 1;
+    width: 1px;
   }
 
   #items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: flex-start;
     flex-grow: 2;
+    width: 1px;
+    overflow: scroll;
+
+    .item {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      margin: 5px;
+      text-align: center;
+
+      &:hover {
+        border-color: red;
+      }
+    }
   }
 
   #order {
     flex-grow: 1;
+    width: 1px;
   }
 }
 
