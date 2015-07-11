@@ -1,0 +1,24 @@
+User:
+  username:string
+  admin:boolean
+  password_digest:string
+
+-------------------------------------------
+
+customers:
+  name:string
+
+orders:
+  number: integer
+  status:string
+  customer_id:integer (foreign key)
+
+items:
+  category:string
+  name:string
+  price:float
+  cl_id:string
+
+items_orders:
+  item_id:integer (foreign key)
+  order_id:integer (foreign key)
