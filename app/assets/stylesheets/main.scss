@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  div {
+    &:nth-child(even) {
+      background: grey;
+    }
+
+    &:nth-child(odd) {
+      background: lightgrey;
+    }
+  }
+
+  #categories {
+    flex-grow: 1;
+  }
+
+  #items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+
+  #order {
+    flex-grow: 1;
+  }
+}
+
+
+
+
